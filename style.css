@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  /*  align-items controls the cross axis or y-axis */
+  align-items: center;
+  height: 60px;
+  background: rgb(100, 63, 251);
+  background: linear-gradient(
+    70deg,
+    rgba(100, 63, 251, 1) 26%,
+    rgba(70, 252, 213, 1) 100%
+  );
+  color: white;
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.59);
+}
+#btn-group {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  margin: 10px;
+}
+#display-container {
+  color: white;
+  margin: 10px 600px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+button {
+  margin: 5px 0;
+  background-color: #44aaee;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(49, 49, 49, 0.4);
+}
+
+button:hover {
+  background-color: #44eeaa;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /*  align-items controls the cross axis or y-axis */
+  align-items: center;
+}
+
+main .list {
+  width: 100%;
+  max-width: 768px;
+  /* 	border: 1px solid #CCC; */
+  margin-top: 25px;
+}
+
+main .list .item {
+  /*   text-align:center; */
+  color: white;
+  background: #101010;
+  padding: 15px;
+  border-bottom: 1px solid #1b1b1b;
+}
+main .list .item:last-of-type {
+  border-bottom: none;
+}
+main .list .item:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.pagenumbers {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagenumbers button {
+  width: 50px;
+  height: 50px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background-color: #44aaee;
+
+  margin: 5px;
+  transition: 0.4s;
+
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px 5px rgba(49, 49, 49, 0.4);
+}
+
+.pagenumbers button:hover {
+  background-color: #44eeaa;
+}
+
+.pagenumbers button.active {
+  background-color: #44eeaa;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(49, 49, 49, 0.4);
+}
+
+p {
+  margin: 10px 0;
+}
